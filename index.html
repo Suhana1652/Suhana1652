@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- map dependencies -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+
+    <title>McDuck's: Burgers, Fries & More.</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid mx-md-5">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="" width="60" />
+          <b>McDuck's</b> 
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav w-75 justify-content-evenly">
+            <a
+              class="nav-link active fw-bold"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="nav-link active fw-bold"
+              aria-current="page"
+              href="reward.html"
+              >MyMcDuck's Rewards</a
+            >
+            <a
+              class="nav-link active fw-bold"
+              aria-current="page"
+              href="about.html"
+              >About Our Food</a
+            >
+            <a
+              class="nav-link active fw-bold"
+              aria-current="page"
+              href="register.html"
+              >Sign Up for Email</a
+            >
+
+            <!-- <a class="nav-link active fw-bold" aria-current="page" href="#"
+              >Sign Up</a
+            > -->
+            <!-- <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled">Disabled</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hero>
+      <div class="vh-75 row bg-overlay align-items-center">
+        <div class="text-center">
+          <h1><b>Happy Holidays from McDuck’s!</b></h1>
+          <h3>
+            Free Daily Deals, Only in the App <strong>Dec. 13th - Dec. 24th</strong>
+          </h3>
+          <h7>
+            When you're the queen of the holidays, you get more than a meal. The Mariah Menu is coming soon-get daily deals free with ₹75 minimum purchase, only in the app.
+          </h7>
+          <br /><br />
+          <button type="button" class="btn btn-primary">Download the App</button>
+        </div>
+      </div>
+    </hero>
+
+    <section class="widgets">
+      <div class="container row my-4 m-auto justify-content-center g-4">
+        <div class="col-md-6">
+          <button type="button" class="py-2 w-100 btn btn-dark">
+            Frequently Asked Questions
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="py-2 w-100 btn btn-dark">
+            News & Notifications
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="py-2 w-100 btn btn-dark">
+            Working with Us
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="py-2 w-100 btn btn-dark">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-events container my-3">
+      <div class="py-4 text-center fs-3 fw-bold">Exclusive McDuck's Deals</div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/images/1PUB_CCS_Deal_1168x520.jpg?$Publication_One_Column_Desktop$"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Free Fries & Drink with Crispy Chicken Sandwiches*</b></h5>
+              <p class="card-text">
+                Make this holiday season CrispyJuicyTender with Crispy Chicken Sandwiches. They come with free medium fries and a free medium soft drink.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">*Valid: 11/22/21 to 12/12/21 at participating McDuck’s. © 2021 McDuck’s</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/images/1PUB_MMR_FFNFML_1168x520.jpg?$Publication_One_Column_Desktop$"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Free Fries Now. Free McDuck’s Later.*</b></h5>
+              <p class="card-text">
+                Get free large Fries when you download the McDuck’s app and join MyMcDuck’s Rewards. Get your choice of McChicken® free after your first purchase.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">*Free large Fries valid 1x thru 12/31/21 for first time app users at participating McDuck’s. © 2021 McDuck’s</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/images/2PUB_LargeFries_574x384.jpg?$Publication_Two_Column_Desktop$"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>₹75 Large Fries*</b></h5>
+              <p class="card-text">
+                Large Fries mean you still have enough after sharing with friends. Get ’em for ₹75-only in our app.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">*Offer Valid thru 12/31/21 at participating McDuck’s. Valid 1x/Week. © 2021 McDuck’s</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-4">
+      <div class="py-4 text-center fs-3 fw-bold">Locate our McDuck's Store</div>
+      <div class="container" style="height: 50vh" id="mapid"></div>
+    </section>
+
+    <section class="container">
+      <div class="pt-4 text-center fs-3 fw-bold">GLOBAL REVIEWS</div>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <div class="carousel-caption">
+              <p>
+                I have been visiting every weekend. And it's a nice place to eat without any disturbance and make me feel relaxed. I am a spicy chicken and kebab wrap lover. Whenever I visit McDuck's, I placed this order almost everytime. I also love those McDuck's black forest as desserts.
+              </p>
+              <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid" />
+              <div id="image-caption">Andrew of Sandston, VA</div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <div class="carousel-caption">
+              <p>
+                Everything on your menu deserves 5 stars. Everything is so savory. The environment is okay. Not the absolute best but good. The workers know how to get it done well, they know what they are doing. The best thing there is 100% the number 9 meal. It's small but yet so filling and with the sweet tea with the meal, that's the best combo! Definitely a 10/10 if you ask me.
+              </p>
+              <img src="https://i.imgur.com/lE89Aey.jpg" />
+              <div id="image-caption">Amber of Billings, MT</div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-caption">
+              <p>
+                Ok so, I eat at a LOT of fancy food at fancy food restaurants because I am rich, and so I was on a road trip and I was hungry, so I stopped off at McDuck’s, and I got a double cheeseburger with French fries, and OH MY GOSH! This was the best food I have ever ate. And I have PICKY taste. So if I say that I like this restaurant, so do you.
+              </p>
+              <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid" />
+              <div id="image-caption">Veronica of Shepherdsville, KY</div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="my-4 text-center fs-3 fw-bold">More Points Unlock More Rewards!</div>
+      <div class="text-center my-4">
+        <button type="button" class="btn btn-warning">Redeem Rewards</button>
+      </div>
+    </section>
+
+    <section class="my-4 sponsors py-5">
+      <div class="my-4 text-center fs-3 fw-bold">--Know More About McDuck's--</div>
+      <div class="items row justify-content-evenly g-2">
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/google-logo.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/instagram.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/facebook.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/twitter.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/youtube.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/yahoo.png"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="logo"
+              src="https://img.icons8.com/color/100/000000/whatsapp.png"
+            />
+          </div>
+        </div>
+        <!---->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+      <div class="container py-4">
+        <div class="row gy-4 gx-5">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="h1 text-white">McDuck's</h5>
+            <p class="small text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <p class="small text-muted mb-0">
+              &copy; 2021 McDuck's. All Rights Reserved.
+              <!-- <a class="text-primary" href="#">Bootstrapious.com</a> -->
+            </p>
+            <p class="small text-muted mb-0">
+              Designed By Amartya Das, Rituparna Barman & Suhana Hussain.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-3">Quick links</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Redeem Rewards</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-3">Socials</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-3">Subscribe to Our Newsletters</h5>
+            <p class="small text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <form action="#">
+              <div class="input-group mb-3">
+                <input
+                  class="form-control primary"
+                  type="text"
+                  placeholder="Recipient's username"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="button-addon2"
+                  type="button"
+                >
+                  <!-- <i class="fas fa-paper-plane"></i> -->Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/map.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
